@@ -14,3 +14,13 @@ jobs:
         run: id
       - name: Third step
         run: ls -l
+  say-hello-in-python:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run inline Python
+        run: |
+          python - <<EOF
+          print("Hello World from Python")
+          for i in range(3):
+              print("Line", i)
+          EOF
