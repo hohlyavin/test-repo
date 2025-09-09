@@ -10,3 +10,7 @@ jobs:
     steps:
       - name: Greeting from gh workflow
         run: echo "Hello World"
+      - name: Second step
+        run: id
+      - name: Third step
+        run: ls -l
