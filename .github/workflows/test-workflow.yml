@@ -20,7 +20,7 @@ jobs:
       - name: Run inline Python
         run: |
           python - <<EOF
-          print("Hello World from Python")
+          print("Hello World from Python!!!")
           for i in range(3):
               print("Line", i)
           EOF
